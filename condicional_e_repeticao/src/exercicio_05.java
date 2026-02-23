@@ -1,0 +1,26 @@
+/*
+5.Crie um programa que solicite ao usuário a entrada de um número inteiro. Verifique se o
+número é par ou ímpar e exiba uma mensagem correspondente.
+ */
+
+import java.util.Scanner;
+
+public class exercicio_05 {
+
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um número inteiro e descubra se ele é par ou não > ");
+        int x = sc.nextInt();
+
+        if(x % 2 != 0){
+            System.out.println("Esse número é ímpar!");
+        } else {
+            System.out.println("Esse número é par!");
+        }
+
+        sc.close();
+    }
+
+}
